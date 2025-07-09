@@ -1,0 +1,183 @@
+{
+  "services": {
+    "generic": {
+      "parameter_to_value": "{parameter} auf {value}",
+      "action_with_parameter": "{action} mit {parameter}"
+    },
+    "climate": {
+      "set_temperature": "Temperatur einstellen[ auf {temperature}]",
+      "set_temperature_hvac_mode_heat": "heizen[ auf {temperature}]",
+      "set_temperature_hvac_mode_cool": "kühlen[ auf {temperature}]",
+      "set_temperature_hvac_mode_heat_cool": "heizen/kühlen[ auf {temperature}]",
+      "set_temperature_hvac_mode_heat_cool_range": "heizen/kühlen[ auf {target_temp_low} - {target_temp_high}]",
+      "set_temperature_hvac_mode_auto": "automatisch[ auf {temperature}]",
+      "set_hvac_mode": "Modus setzen[ auf {hvac_mode}]",
+      "set_preset_mode": "Voreinstellung setzen[ auf {preset_mode}]",
+      "set_fan_mode": "set fan mode[ to {fan_mode}]"
+    },
+    "cover": {
+      "close_cover": "schließen",
+      "open_cover": "öffnen",
+      "set_cover_position": "Position setzen[ auf {position}]",
+      "set_cover_tilt_position": "Tilt Position setzen[ auf {tilt_position}]"
+    },
+    "fan": {
+      "set_speed": "Geschwindigkeit speed[ auf {speed}]",
+      "set_direction": "Richtung setzen[ auf {direction}]",
+      "oscillate": "Oszillation setzen[ auf {oscillate}]"
+    },
+    "humidifier": {
+      "set_humidity": "Luftfeuchtigkeit setzen[ auf {humidity}]",
+      "set_mode": "Modus setzen[ auf {mode}]"
+    },
+    "input_number": {
+      "set_value": "Wert setzen[ auf {value}]"
+    },
+    "input_select": {
+      "select_option": "Option[ {option}] auswählen"
+    },
+    "select": {
+      "select_option": "Option[ {option}] auswählen"
+    },
+    "light": {
+      "turn_on": "anschalten[ mit {brightness} Helligkeit]"
+    },
+    "media_player": {
+      "select_source": "Quelle[ {source}] auswählen"
+    },
+    "notify": {
+      "notify": "Nachricht senden"
+    },
+    "script": {
+      "script": "ausführen"
+    },
+    "vacuum": {
+      "start_pause": "Start / Pause"
+    },
+    "water_heater": {
+      "set_operation_mode": "Modus setzen[ auf {operation_mode}]",
+      "set_away_mode": "Abwesenheitsmodus setzen"
+    }
+  },
+  "domains": {
+    "alarm_control_panel": "Alarmzentrale",
+    "binary_sensor": "binary sensors",
+    "climate": "Heizung",
+    "cover": "Beschattung",
+    "fan": "Lüfter",
+    "group": "Gruppen",
+    "humidifier": "Befeuchter",
+    "input_boolean": "input boolean",
+    "input_number": "input number",
+    "input_select": "input select",
+    "lawn_mower": "lawn mower",
+    "light": "Licht",
+    "lock": "Schlösser",
+    "media_player": "Medienplayer",
+    "notify": "notification",
+    "switch": "Schalter",
+    "vacuum": "Staubsauger",
+    "water_heater": "Boiler"
+  },
+  "ui": {
+    "components": {
+      "date": {
+        "day_types_short": {
+          "daily": "täglich",
+          "workdays": "Werktags",
+          "weekend": "Wochenende"
+        },
+        "day_types_long": {
+          "daily": "Jeden Tag",
+          "workdays": "An Werktagen",
+          "weekend": "Am Wochenende"
+        },
+        "days": "Tage",
+        "tomorrow": "morgen",
+        "repeated_days": "jeden {days}",
+        "repeated_days_except": "täglich außer {excludedDays}",
+        "days_range": "von {startDay} bis {endDay}",
+        "next_week_day": "nächsten {weekday}"
+      },
+      "time": {
+        "absolute": "um {time}",
+        "interval": "von {startTime} bis {endTime}",
+        "at_midnight": "um Mitternacht",
+        "at_noon": "um Mittag",
+        "at_sun_event": "beim {sunEvent}"
+      }
+    },
+    "dialog": {
+      "enable_schedule": {
+        "title": "Modifikationen beenden",
+        "description": "Der geänderte Zeitplan ist derzeit deaktiviert, sollte er aktiviert werden?"
+      },
+      "confirm_delete": {
+        "title": "Entität entfernen?",
+        "description": "Bist du dir sicher, dass du diese Entität löschen möchtest?"
+      },
+      "weekday_picker": {
+        "title": "Repeated days for schedule",
+        "choose": "Choose..."
+      },
+      "entity_picker": {
+        "title": "Choose entities"
+      },
+      "action_picker": {
+        "title": "Choose action"
+      }
+    },
+    "panel": {
+      "common": {
+        "title": "Zeitplaner",
+        "new_schedule": "Neuer Zeitplan",
+        "default_name": "Zeitplan #{id}"
+      },
+      "overview": {
+        "no_entries": "Es gibt keine Einträge, die angezeigt werden können",
+        "backend_error": "Es konnte keine Verbindung mit der Schedulerkomponente hergestellt werden. Es muss als Integration installiert werden, bevor diese Karte verwendet werden kann.",
+        "excluded_items": "{number} {if number is 1} ausgeschlossener Eintrag {else} ausgeschlossene Einträge",
+        "hide_excluded": "Verstecke ausgeschlossene Einträge",
+        "additional_tasks": "{number} weitere {if number is 1} Aufgabe {else} Aufgaben"
+      },
+      "editor": {
+        "repeated_days": "Repeated days",
+        "start_time": "Start time",
+        "stop_time": "End time",
+        "action": "Action",
+        "add_action": "Add action",
+        "select_timeslot": "Wähle ein Zeitfenster aus",
+        "validation_errors": {
+          "overlapping_time": "Schedule has overlapping timeslots",
+          "missing_target_entity": "One or more actions are missing a target entity",
+          "missing_service_parameter": "One or more actions are missing a required setting",
+          "missing_action": "Schedule has no actions"
+        }
+      },
+      "options": {
+        "conditions": {
+          "header": "Conditions",
+          "add_condition": "Add condition",
+          "types": {
+            "equal_to": "{entity} ist {value}",
+            "unequal_to": "{entity} ist nicht {value}",
+            "above": "{entity} is above {value}",
+            "below": "{entity} is below {value}"
+          },
+          "options": {
+            "logic_and": "All conditions must be true",
+            "logic_or": "Any condition must be true",
+            "track_changes": "Erneut prüfen wenn sich die Zustände ändern"
+          }
+        },
+        "period": {
+          "header": "Zeitraum",
+          "start_date": "From",
+          "end_date": "To"
+        },
+        "repeat_type": "Verhalten nach Abschluß",
+        "tags": "Tags"
+      }
+    }
+  }
+}
